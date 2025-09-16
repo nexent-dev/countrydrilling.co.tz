@@ -1,0 +1,37 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Contact: development [at] countrydrilling.co.tz
+    Location: Tanzania
+
+    Content Specialist: Country Drilling Team
+    Contact: info [at] countrydrilling.co.tz
+    Location: Arusha, Tanzania
+
+# THANKS
+
+    Country Drilling & General Supply Co. Ltd
+    Hydrogeological expertise and technical guidance
+    
+    PQWT Technology Partners
+    Advanced groundwater detection equipment
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    React 18, TypeScript
+    Bootstrap 5
+    Vite Build Tool
+    FontAwesome Icons
+    Google Fonts (Roboto)
+    
+    Standards: W3C, Schema.org
+    Components: Responsive Design, PWA Ready
+    Accessibility: WCAG 2.1 AA Compliant
+    
+    Last update: 2025/01/16
+    Languages: English, Swahili
+    Doctype: HTML5
+    IDE: Visual Studio Code

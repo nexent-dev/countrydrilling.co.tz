@@ -1,0 +1,8 @@
+Contact: mailto:security@countrydrilling.co.tz
+Contact: mailto:info@countrydrilling.co.tz
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://countrydrilling.co.tz/.well-known/pgp-key.txt
+Acknowledgments: https://countrydrilling.co.tz/security-acknowledgments
+Preferred-Languages: en, sw
+Canonical: https://countrydrilling.co.tz/.well-known/security.txt
+Policy: https://countrydrilling.co.tz/security-policy
