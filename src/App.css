@@ -244,7 +244,7 @@ body {
   text-align: center;
 }
 
-/* Responsive Typography */
+/* Mobile-First Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem !important;
@@ -260,6 +260,60 @@ body {
   
   .display-5 {
     font-size: 2rem;
+  }
+  
+  /* Mobile Navigation */
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-brand div:first-child {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-brand div:last-child {
+    font-size: 0.65rem !important;
+  }
+  
+  /* Mobile Cards */
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .feature-card {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  /* Mobile Buttons */
+  .btn-lg {
+    padding: 1rem 2rem !important;
+    font-size: 1rem !important;
+  }
+  
+  /* Mobile Map */
+  .map-container {
+    height: 300px !important;
+  }
+  
+  /* Mobile Touch Targets */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Mobile Hero Adjustments */
+  .hero-section {
+    padding: 4rem 0 !important;
+  }
+  
+  .hero-stats .stat-card {
+    margin-bottom: 1rem;
   }
 }
 
@@ -278,6 +332,54 @@ body {
   
   .display-5 {
     font-size: 1.75rem;
+  }
+  
+  /* Extra Small Mobile */
+  .navbar-brand {
+    font-size: 0.9rem !important;
+  }
+  
+  .navbar-brand div:first-child {
+    font-size: 0.9rem !important;
+  }
+  
+  .navbar-brand div:last-child {
+    font-size: 0.6rem !important;
+  }
+  
+  .card-body {
+    padding: 1.25rem !important;
+  }
+  
+  .feature-card {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .btn {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1.5rem !important;
+    min-height: 44px;
+  }
+  
+  .btn-lg {
+    padding: 0.875rem 1.75rem !important;
+    font-size: 0.9rem !important;
+    min-height: 48px;
+  }
+  
+  /* Mobile Map */
+  .map-container {
+    height: 250px !important;
+  }
+  
+  /* Extra Small Mobile Hero */
+  .hero-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .hero-section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -809,7 +911,7 @@ p, .body-text {
   background-color: var(--primary-blue) !important;
 }
 
-/* Responsive Typography */
+/* Enhanced Mobile Typography */
 @media (max-width: 768px) {
   h1, .h1 {
     font-size: 2.25rem;
@@ -830,6 +932,21 @@ p, .body-text {
   .section-padding-lg {
     padding: 4rem 0;
   }
+  
+  /* Mobile Contact Methods */
+  .contact-method-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Mobile Form Spacing */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Mobile Stats */
+  .stats-card {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -843,5 +960,21 @@ p, .body-text {
   
   .section-padding {
     padding: 2rem 0;
+  }
+  
+  /* Extra Mobile Optimizations */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .col, [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

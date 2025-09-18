@@ -62,18 +62,23 @@ const Home: React.FC = () => {
                   Advanced hydrogeological surveys and scientific drilling methods for sustainable water access. 
                   Utilizing PQWT detection technology and DTH hammering techniques for precise groundwater solutions.
                 </p>
-                <div className="hero-buttons d-flex flex-wrap gap-3">
-                  <button className="btn btn-primary btn-lg">
+                <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+                  <a 
+                    href="/contact" 
+                    className="btn btn-primary btn-lg"
+                    style={{ textDecoration: 'none' }}
+                  >
                     <i className="fas fa-search me-2"></i>
                     REQUEST SURVEY
-                  </button>
-                  <button className="btn btn-outline-light btn-lg" style={{
-                    borderWidth: '2px',
-                    fontWeight: '700'
-                  }}>
-                    <i className="fas fa-flask me-2"></i>
-                    OUR METHODOLOGY
-                  </button>
+                  </a>
+                  <a 
+                    href="tel:+255788576062" 
+                    className="btn btn-outline-primary btn-lg"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <i className="fas fa-phone me-2"></i>
+                    CALL NOW
+                  </a>
                 </div>
               </div>
             </Col>
@@ -191,11 +196,11 @@ const Home: React.FC = () => {
                 <div className="feature-icon mx-auto">
                   <i className="fas fa-clock"></i>
                 </div>
-                <h4>24/7 Emergency Service</h4>
-                <p>Round-the-clock emergency response for critical water system failures and urgent drilling needs.</p>
+                <h4>24/7 Priority Service</h4>
+                <p>Round-the-clock priority response for critical water system failures and urgent drilling needs.</p>
                 <div className="feature-specs mt-3">
                   <small style={{ color: 'var(--accent-blue)', fontWeight: '600' }}>
-                    ✓ 24/7 Response ✓ Emergency Repairs ✓ Rapid Deployment
+                    ✓ 24/7 Response ✓ Priority Repairs ✓ Rapid Deployment
                   </small>
                 </div>
               </div>
@@ -298,7 +303,7 @@ const Home: React.FC = () => {
                     <i className="fas fa-tools" style={{ fontSize: '2rem', color: 'white' }}></i>
                   </div>
                   <h5 className="card-title">Maintenance & Repair</h5>
-                  <p className="card-text">Preventive maintenance and emergency repair services for existing wells.</p>
+                  <p className="card-text">Preventive maintenance and priority repair services for existing wells.</p>
                 </div>
               </div>
             </Col>
@@ -343,7 +348,7 @@ const Home: React.FC = () => {
               <div className="cta-buttons d-flex flex-wrap justify-content-center gap-3">
                 <button className="btn btn-primary btn-lg">
                   <i className="fas fa-phone me-2"></i>
-                  CALL NOW: +255 123 456 789
+                  CALL NOW: +255 788 576 062
                 </button>
                 <button className="btn btn-secondary btn-lg">
                   <i className="fas fa-envelope me-2"></i>

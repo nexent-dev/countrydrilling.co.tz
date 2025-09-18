@@ -363,7 +363,7 @@ const Services: React.FC = () => {
               <div className="d-flex flex-wrap justify-content-center gap-3">
                 <button className="btn btn-primary btn-lg">
                   <i className="fas fa-phone me-2"></i>
-                  CALL: +255 123 456 789
+                  CALL: +255 788 576 062
                 </button>
                 <button className="btn btn-secondary btn-lg">
                   <i className="fas fa-calculator me-2"></i>

@@ -39,9 +39,10 @@ const Contact: React.FC = () => {
     {
       icon: 'fas fa-phone',
       title: 'DIRECT LINE',
-      primary: '+255 784 123 456',
-      secondary: '+255 754 987 654',
-      description: '24/7 Emergency Support',
+      primary: '+255 788 576 062',
+      secondary: '+255 744 090 455',
+      tertiary: '+255 769 200 455',
+      description: '24/7',
       color: 'var(--primary-orange)'
     },
     {
@@ -65,7 +66,7 @@ const Contact: React.FC = () => {
       title: 'OPERATING HOURS',
       primary: 'Mon-Fri: 7:00 AM - 7:00 PM',
       secondary: 'Sat: 8:00 AM - 4:00 PM',
-      description: 'Emergency: 24/7 Available',
+      description: 'Available 24/7',
       color: 'var(--neutral-600)'
     }
   ];
@@ -77,7 +78,7 @@ const Contact: React.FC = () => {
     'Mining Operations',
     'Commercial Buildings',
     'Residential Communities',
-    'Emergency Water Access',
+    'Urgent Water Access',
     'Other (Please Specify)'
   ];
 
@@ -201,11 +202,20 @@ const Contact: React.FC = () => {
                   </p>
                   <p style={{ 
                     color: 'var(--neutral-600)', 
-                    marginBottom: '1rem',
+                    marginBottom: method.tertiary ? '0.5rem' : '1rem',
                     fontSize: '0.95rem'
                   }}>
                     {method.secondary}
                   </p>
+                  {method.tertiary && (
+                    <p style={{ 
+                      color: 'var(--neutral-600)', 
+                      marginBottom: '1rem',
+                      fontSize: '0.95rem'
+                    }}>
+                      {method.tertiary}
+                    </p>
+                  )}
                   <div style={{
                     background: 'var(--neutral-50)',
                     padding: '0.75rem 1rem',
@@ -495,7 +505,7 @@ const Contact: React.FC = () => {
                 marginBottom: '1.5rem',
                 color: 'white'
               }}>
-                EMERGENCY DRILLING SERVICES
+                PRIORITY DRILLING SERVICES
               </h2>
               <p style={{
                 fontSize: '1.25rem',
@@ -503,26 +513,190 @@ const Contact: React.FC = () => {
                 color: 'rgba(255,255,255,0.9)',
                 lineHeight: '1.6'
               }}>
-                Need immediate water access? Our emergency response team is available 24/7 
+                Need immediate water access? Our priority response team is available 24/7 
                 for critical water drilling situations across Tanzania.
               </p>
-              <div className="d-flex flex-wrap justify-content-center gap-3">
+              <div className="d-flex flex-column flex-sm-row justify-content-center gap-3">
                 <a 
-                  href="tel:+255784123456"
+                  href="tel:+255788576062"
                   className="btn btn-primary btn-lg"
                   style={{ textDecoration: 'none' }}
                 >
                   <i className="fas fa-phone me-2"></i>
-                  EMERGENCY HOTLINE
+                  PRIORITY HOTLINE
                 </a>
                 <a 
-                  href="mailto:emergency@countrydrilling.co.tz"
+                  href="mailto:priority@countrydrilling.co.tz"
                   className="btn btn-secondary btn-lg"
                   style={{ textDecoration: 'none' }}
                 >
                   <i className="fas fa-envelope me-2"></i>
                   URGENT EMAIL
                 </a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Office Location Map */}
+      <section className="section-padding" style={{ background: 'var(--neutral-50)' }}>
+        <Container>
+          <Row className="text-center mb-5">
+            <Col>
+              <h2 style={{ color: 'var(--primary-navy)', marginBottom: '1rem' }}>
+                VISIT OUR OFFICE
+              </h2>
+              <p className="lead" style={{ color: 'var(--neutral-600)' }}>
+                Located in Arusha, Tanzania - Your trusted partner for hydrogeological solutions
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div 
+                className="map-container"
+                style={{
+                  width: '100%',
+                  height: '450px',
+                  borderRadius: '12px',
+                  overflow: 'hidden',
+                  boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                  border: '1px solid var(--neutral-200)',
+                  marginBottom: '2rem'
+                }}
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.234567890123!2d36.680691!3d-3.370532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMjInMTMuOSJTIDM2wrA0MCc1MC41IkU!5e0!3m2!1sen!2stz!4v1234567890123!5m2!1sen!2stz"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Country Drilling Office Location - Arusha, Tanzania"
+                ></iframe>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div style={{
+                padding: '2rem',
+                background: 'white',
+                borderRadius: '12px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}>
+                <Row>
+                  <Col md={6}>
+                    <div style={{ marginBottom: '1.5rem' }}>
+                      <h5 style={{ 
+                        color: 'var(--primary-navy)', 
+                        marginBottom: '0.75rem',
+                        fontWeight: '700'
+                      }}>
+                        <i className="fas fa-map-marker-alt me-2" style={{ color: 'var(--primary-orange)' }}></i>
+                        Office Address
+                      </h5>
+                      <p style={{ 
+                        color: 'var(--neutral-600)', 
+                        marginBottom: '0',
+                        lineHeight: '1.6'
+                      }}>
+                        Arusha Industrial Area<br />
+                        Plot 123, Sokoine Road<br />
+                        Arusha, Tanzania
+                      </p>
+                    </div>
+                  </Col>
+                  <Col md={6}>
+                    <div style={{ marginBottom: '1.5rem' }}>
+                      <h5 style={{ 
+                        color: 'var(--primary-navy)', 
+                        marginBottom: '0.75rem',
+                        fontWeight: '700'
+                      }}>
+                        <i className="fas fa-directions me-2" style={{ color: 'var(--success-green)' }}></i>
+                        Get Directions
+                      </h5>
+                      <a 
+                        href="https://maps.app.goo.gl/4bT1HUSb8FJnb8rY6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          color: 'var(--accent-blue)',
+                          textDecoration: 'none',
+                          fontWeight: '600',
+                          display: 'inline-flex',
+                          alignItems: 'center'
+                        }}
+                      >
+                        <i className="fas fa-external-link-alt me-2"></i>
+                        Open in Google Maps
+                      </a>
+                    </div>
+                  </Col>
+                </Row>
+                <div style={{
+                  background: 'var(--neutral-50)',
+                  padding: '1.5rem',
+                  borderRadius: '12px',
+                  marginTop: '1rem'
+                }}>
+                  <Row>
+                    <Col md={4} className="mb-3 mb-md-0">
+                      <div className="text-center">
+                        <i className="fas fa-clock" style={{ 
+                          fontSize: '1.5rem', 
+                          color: 'var(--primary-orange)',
+                          marginBottom: '0.5rem'
+                        }}></i>
+                        <p style={{ 
+                          margin: '0',
+                          fontWeight: '600',
+                          color: 'var(--neutral-700)',
+                          fontSize: '0.9rem'
+                        }}>
+                          Mon-Fri: 7:00 AM - 7:00 PM
+                        </p>
+                      </div>
+                    </Col>
+                    <Col md={4} className="mb-3 mb-md-0">
+                      <div className="text-center">
+                        <i className="fas fa-calendar-alt" style={{ 
+                          fontSize: '1.5rem', 
+                          color: 'var(--accent-blue)',
+                          marginBottom: '0.5rem'
+                        }}></i>
+                        <p style={{ 
+                          margin: '0',
+                          fontWeight: '600',
+                          color: 'var(--neutral-700)',
+                          fontSize: '0.9rem'
+                        }}>
+                          Sat: 8:00 AM - 4:00 PM
+                        </p>
+                      </div>
+                    </Col>
+                    <Col md={4}>
+                      <div className="text-center">
+                        <i className="fas fa-phone-alt" style={{ 
+                          fontSize: '1.5rem', 
+                          color: 'var(--success-green)',
+                          marginBottom: '0.5rem'
+                        }}></i>
+                        <p style={{ 
+                          margin: '0',
+                          fontWeight: '600',
+                          color: 'var(--neutral-700)',
+                          fontSize: '0.9rem'
+                        }}>
+                          Available: 24/7
+                        </p>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
               </div>
             </Col>
           </Row>

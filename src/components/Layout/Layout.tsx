@@ -274,7 +274,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   }}>
                     <i className="fas fa-phone" style={{ color: 'white', fontSize: '0.875rem' }}></i>
                   </div>
-                  <span style={{ color: 'rgba(255,255,255,0.8)' }}>+255 123 456 789</span>
+                  <span style={{ color: 'rgba(255,255,255,0.8)' }}>+255 788 576 062</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <div style={{
@@ -321,7 +321,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </div>
                 <div>
                   <div style={{ color: 'var(--primary-orange)', fontWeight: '600', marginBottom: '0.25rem' }}>
-                    24/7 Emergency
+                    24/7 Available
                   </div>
                   <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem' }}>
                     Available for urgent repairs

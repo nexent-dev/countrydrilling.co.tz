@@ -74,7 +74,7 @@ const Clients: React.FC = () => {
     },
     {
       number: '24/7',
-      label: 'Emergency Support',
+      label: 'Priority Support',
       icon: 'fas fa-clock',
       color: 'var(--neutral-600)'
     }
