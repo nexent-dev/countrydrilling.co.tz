@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import drillingVideo from '../../assets/video/drilling.mp4';
+import projectImage1 from '../../assets/images/2024-11-11.jpg';
+import projectImage2 from '../../assets/images/2024-11-12.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -306,6 +309,188 @@ const Home: React.FC = () => {
                   <p className="card-text">Preventive maintenance and priority repair services for existing wells.</p>
                 </div>
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Video Showcase Section */}
+      <section className="section-padding" style={{ background: 'var(--neutral-50)' }}>
+        <Container>
+          <Row className="text-center mb-5">
+            <Col>
+              <h2 style={{ color: 'var(--primary-navy)', marginBottom: '1rem' }}>
+                SCIENTIFIC DRILLING IN ACTION
+              </h2>
+              <p className="lead" style={{ color: 'var(--neutral-600)' }}>
+                Watch our advanced DTH hammering techniques and precision drilling process
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col lg={10}>
+              <div style={{
+                position: 'relative',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 12px 30px rgba(0, 0, 0, 0.15)',
+                background: '#000'
+              }}>
+                <video
+                  src={drillingVideo}
+                  controls
+                  poster={projectImage1}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    maxHeight: '500px',
+                    objectFit: 'cover'
+                  }}
+                >
+                  Your browser does not support the video tag.
+                </video>
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  left: '20px',
+                  background: 'rgba(0, 0, 0, 0.8)',
+                  color: 'white',
+                  padding: '12px 20px',
+                  borderRadius: '25px',
+                  backdropFilter: 'blur(10px)'
+                }}>
+                  <i className="fas fa-video me-2"></i>
+                  Scientific Drilling Process
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Project Gallery Preview */}
+      <section className="section-padding">
+        <Container>
+          <Row className="text-center mb-5">
+            <Col>
+              <h2 style={{ color: 'var(--primary-navy)', marginBottom: '1rem' }}>
+                RECENT PROJECTS
+              </h2>
+              <p className="lead" style={{ color: 'var(--neutral-600)' }}>
+                Explore our latest hydrogeological surveys and completed drilling projects
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} className="mb-4">
+              <div className="project-card" style={{
+                position: 'relative',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{ position: 'relative', paddingBottom: '60%', overflow: 'hidden' }}>
+                  <img
+                    src={projectImage1}
+                    alt="Hydrogeological Survey Operations"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                    color: 'white',
+                    padding: '2rem 1.5rem 1.5rem'
+                  }}>
+                    <h5 style={{ fontWeight: '700', marginBottom: '0.5rem' }}>
+                      Hydrogeological Survey
+                    </h5>
+                    <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>
+                      Advanced PQWT groundwater detection and mapping
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} className="mb-4">
+              <div className="project-card" style={{
+                position: 'relative',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{ position: 'relative', paddingBottom: '60%', overflow: 'hidden' }}>
+                  <img
+                    src={projectImage2}
+                    alt="Scientific Drilling Operations"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                    color: 'white',
+                    padding: '2rem 1.5rem 1.5rem'
+                  }}>
+                    <h5 style={{ fontWeight: '700', marginBottom: '0.5rem' }}>
+                      Scientific Drilling
+                    </h5>
+                    <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.9 }}>
+                      DTH hammering technique for precision water wells
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="text-center mt-4">
+            <Col>
+              <a 
+                href="/gallery" 
+                className="btn btn-outline-primary btn-lg"
+                style={{ textDecoration: 'none' }}
+              >
+                <i className="fas fa-images me-2"></i>
+                VIEW ALL PROJECTS
+              </a>
             </Col>
           </Row>
         </Container>

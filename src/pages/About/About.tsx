@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import equipmentImage from '../../assets/images/2024-11-11 (1).jpg';
+import fieldworkImage from '../../assets/images/2024-11-14.jpg';
+import completedImage from '../../assets/images/2025-07-10.jpg';
 
 const About: React.FC = () => {
   const technicalStats = [
@@ -415,6 +418,267 @@ const About: React.FC = () => {
                 </div>
               </Col>
             ))}
+          </Row>
+        </Container>
+      </section>
+
+      {/* Equipment & Operations Showcase */}
+      <section className="section-padding" style={{ background: 'var(--neutral-50)' }}>
+        <Container>
+          <Row className="text-center mb-5">
+            <Col>
+              <h2 style={{ color: 'var(--primary-navy)', marginBottom: '1rem' }}>
+                OUR EQUIPMENT & OPERATIONS
+              </h2>
+              <p className="lead" style={{ color: 'var(--neutral-600)' }}>
+                State-of-the-art technology and proven methodologies for superior results
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="equipment-card" style={{
+                background: 'white',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                height: '100%'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{ position: 'relative', paddingBottom: '60%', overflow: 'hidden' }}>
+                  <img
+                    src={equipmentImage}
+                    alt="PQWT Groundwater Detection Equipment"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    top: '15px',
+                    left: '15px',
+                    background: 'var(--primary-orange)',
+                    color: 'white',
+                    padding: '6px 12px',
+                    borderRadius: '20px',
+                    fontSize: '0.8rem',
+                    fontWeight: '600'
+                  }}>
+                    EQUIPMENT
+                  </div>
+                </div>
+                <div style={{ padding: '2rem' }}>
+                  <h5 style={{ 
+                    color: 'var(--primary-navy)', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem' 
+                  }}>
+                    PQWT Detection System
+                  </h5>
+                  <p style={{ 
+                    color: 'var(--neutral-600)', 
+                    fontSize: '0.95rem', 
+                    lineHeight: '1.6',
+                    marginBottom: '1.5rem'
+                  }}>
+                    Advanced groundwater detection technology with GPS mapping and geophysical logging capabilities.
+                  </p>
+                  <div className="d-flex align-items-center">
+                    <i className="fas fa-search-location" style={{ 
+                      color: 'var(--accent-blue)', 
+                      fontSize: '1.25rem',
+                      marginRight: '0.75rem'
+                    }}></i>
+                    <span style={{ 
+                      color: 'var(--neutral-700)', 
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      Precision Groundwater Mapping
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="equipment-card" style={{
+                background: 'white',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                height: '100%'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{ position: 'relative', paddingBottom: '60%', overflow: 'hidden' }}>
+                  <img
+                    src={fieldworkImage}
+                    alt="DTH Hammering Drilling Operations"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    top: '15px',
+                    left: '15px',
+                    background: 'var(--accent-blue)',
+                    color: 'white',
+                    padding: '6px 12px',
+                    borderRadius: '20px',
+                    fontSize: '0.8rem',
+                    fontWeight: '600'
+                  }}>
+                    DRILLING
+                  </div>
+                </div>
+                <div style={{ padding: '2rem' }}>
+                  <h5 style={{ 
+                    color: 'var(--primary-navy)', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem' 
+                  }}>
+                    DTH Hammering Technique
+                  </h5>
+                  <p style={{ 
+                    color: 'var(--neutral-600)', 
+                    fontSize: '0.95rem', 
+                    lineHeight: '1.6',
+                    marginBottom: '1.5rem'
+                  }}>
+                    Down-the-hole hammering drilling method for precise and efficient water well construction.
+                  </p>
+                  <div className="d-flex align-items-center">
+                    <i className="fas fa-hammer" style={{ 
+                      color: 'var(--primary-orange)', 
+                      fontSize: '1.25rem',
+                      marginRight: '0.75rem'
+                    }}></i>
+                    <span style={{ 
+                      color: 'var(--neutral-700)', 
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      120-180m Drilling Capacity
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col lg={4} md={6} className="mb-4">
+              <div className="equipment-card" style={{
+                background: 'white',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                height: '100%'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{ position: 'relative', paddingBottom: '60%', overflow: 'hidden' }}>
+                  <img
+                    src={completedImage}
+                    alt="Completed Water Well Project"
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
+                    }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    top: '15px',
+                    left: '15px',
+                    background: 'var(--success-green)',
+                    color: 'white',
+                    padding: '6px 12px',
+                    borderRadius: '20px',
+                    fontSize: '0.8rem',
+                    fontWeight: '600'
+                  }}>
+                    COMPLETED
+                  </div>
+                </div>
+                <div style={{ padding: '2rem' }}>
+                  <h5 style={{ 
+                    color: 'var(--primary-navy)', 
+                    fontWeight: '700', 
+                    marginBottom: '1rem' 
+                  }}>
+                    Quality Assurance
+                  </h5>
+                  <p style={{ 
+                    color: 'var(--neutral-600)', 
+                    fontSize: '0.95rem', 
+                    lineHeight: '1.6',
+                    marginBottom: '1.5rem'
+                  }}>
+                    Comprehensive testing, documentation, and quality control for every completed project.
+                  </p>
+                  <div className="d-flex align-items-center">
+                    <i className="fas fa-certificate" style={{ 
+                      color: 'var(--success-green)', 
+                      fontSize: '1.25rem',
+                      marginRight: '0.75rem'
+                    }}></i>
+                    <span style={{ 
+                      color: 'var(--neutral-700)', 
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      Certified Water Quality
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row className="text-center mt-4">
+            <Col>
+              <a 
+                href="/gallery" 
+                className="btn btn-primary btn-lg"
+                style={{ textDecoration: 'none' }}
+              >
+                <i className="fas fa-images me-2"></i>
+                VIEW PROJECT GALLERY
+              </a>
+            </Col>
           </Row>
         </Container>
       </section>

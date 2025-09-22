@@ -6,6 +6,7 @@ import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Services from './pages/Services/Services';
+import Gallery from './pages/Gallery/Gallery';
 import Clients from './pages/Clients/Clients';
 import Contact from './pages/Contact/Contact';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
